@@ -1,6 +1,6 @@
-Players successfully created, <%= @player_1.name %> vs. <%= @player_2.name %>
+Players successfully created, <%= @game.name(1) %> vs. <%= @game.name(2) %>
 
-<%= @player_2.name %> hp = <%= @player_2.hp %>
+<%= @game.name(2) %> hp = <%= @game.player_hp(2) %>
 
 <form action = "/attack" method= "POST">
 <input type="submit" value="attack">
